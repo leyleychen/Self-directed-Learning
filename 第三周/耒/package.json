@@ -1,0 +1,31 @@
+{
+  "name": "first-week",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "config.json"
+    ],
+    "scripts": [
+      "config.json"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg index.js -t node18-win-x64 -c package.json"
+  },
+  "keywords": [],
+  "author": "Jerry",
+  "license": "ISC",
+  "description": "這是我第一周的自主學習進度(回家後還有新增一些東西)",
+  "devDependencies": {
+    "discord.js": "^14.16.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

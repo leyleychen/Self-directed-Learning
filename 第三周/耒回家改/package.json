@@ -1,0 +1,41 @@
+{
+  "name": "third-week",
+  "version": "1.0.0",
+  "main": "start.js",
+  "bin": "start.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "events/**/*",
+      "commands/**/*",
+      "start.js",
+      "index.js",
+      "check-config.js",
+      "deploy-command.js"
+    ],
+    "scripts": [
+      "deploy-command.js",
+      "index.js", 
+      "check-config.js"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg start.js -t node18-win-x64 -c package.json",
+    "start": "node start.js"
+  },
+  "keywords": [],
+  "author": "Jerry",
+  "license": "ISC",
+  "description": "這是我第三周的自主學習進度",
+  "devDependencies": {
+    "discord.js": "^14.16.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "path": "^0.12.7"
+  }
+}
